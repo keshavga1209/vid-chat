@@ -167,9 +167,10 @@ export function JoiningScreen({
       video: { deviceId },
     });
     const videoTracks = stream.getVideoTracks();
-
+    console.log(videoTracks);
+    console.log("hi");
     const videoTrack = videoTracks.length ? videoTracks[0] : null;
-
+    console.log(videoTrack);
     setVideoTrack(videoTrack);
   };
   const changeMic = async (deviceId) => {
